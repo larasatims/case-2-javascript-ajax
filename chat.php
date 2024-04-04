@@ -197,7 +197,6 @@ $pesanArray = array_filter($pesanArray, function ($pesan) {
                     <div class="flex justify-between items-center mb-3">
                         <input id="messageInput" name="pesan" class="w-[260px] outline-none placeholder:text-xs placehplder:text-gray-300 placeholder:opacity-60 placeholder:tracking-wide text-sm text-gray-500 tracking-wide" type="text" placeholder="Masukkan Pesan ...">
                         <input type="hidden" id="currentUsername" value="<?php echo $_SESSION['username']; ?>">
-                        <input type="hidden" id="currentProfilePic" value="<?php echo $_SESSION['profile_picture'] ?? null; ?>">
 
                         <button type="submit" id="sendMessage">
                             <svg class="send-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
