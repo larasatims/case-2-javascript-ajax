@@ -163,13 +163,11 @@ $pesanArray = array_filter($pesanArray, function ($pesan) {
 
         </button>
         <div class="absolute container_card w-[370px] h-[550px] rounded-xl flex-col" id="cardChat" style="display: flex">
-            <div class="pt-4 pb-2 px-6 header-card w-full flex items-center justify-between gap-6 rounded-t-xl bg-gradient-to-r from-[#2A37D7] via-[#1c73d6] via-[#1c73d6] via-[#1c73d6] to-[#21C6FB]">
-                <div class="bg-red-400 rounded-full h-[40px] w-[40px]">
-                    <img class="h-[40px] object-cover rounded-full" src="Assets/Images/Profile_group.png" alt="">
-                </div>
+            <div class="pt-4 pb-2 px-6 header-card w-full flex items-center justify-between gap-6 rounded-t-xl bg-blue-500">
+                <div class="bg-blue-500 rounded-full h-[40px] w-[40px]"> 
+            </div>
                 <div class="flex flex-col">
-                <h2 class="font-bold text-base tracking-wide text-slate-300" style="font-size: 0.9em; text-align: center; margin-top: -5px;">ChatApp - Pemweb SI-E Kel 7</h2>
-                    </p>
+                <h2 class="font-bold text-base tracking-wide text-white text-center" style="font-size: 0.9em; margin-top: -5px;">ChatApp - Pemweb SI-E Kel 7</h2>
                 </div>
 
                 <form action="logout.php" method="post">
