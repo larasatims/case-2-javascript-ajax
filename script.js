@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentUsernameInput = document.getElementById("currentUsername");
   const currentUsername = currentUsernameInput.value;
 
-  const currentProfilePicInput = document.getElementById("currentProfilePic");
-  const currentProfilePic = currentProfilePicInput.value;
-
   chatForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -87,25 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
               }
 
-              // Buat elemen untuk menampilkan foto profil
-              const fotoProfil = document.createElement("div");
-              fotoProfil.classList.add(
-                "h-5",
-                "w-5",
-                "rounded-full",
-                "bg-transparent"
-              );
-              const fotoProfilImg = document.createElement("img");
-              fotoProfilImg.classList.add(
-                "object-cover",
-                "min-h-5",
-                "min-w-5",
-                "rounded-full"
-              );
-
-              fotoProfilImg.src = currentProfilePic;
-              fotoProfilImg.alt = "";
-
               const pengirimElement = document.createElement("p");
               pengirimElement.textContent = pengirim;
               pengirimElement.classList.add("text-xs", "text-gray-600");
@@ -168,13 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 );
               }
 
-              fotoProfil.appendChild(fotoProfilImg);
-
               chatContent.appendChild(pesanElement);
               chatContent.appendChild(pengirimElement);
               chatContent.appendChild(dato2);
 
-              containerPesan.appendChild(fotoProfil);
               containerPesan.appendChild(chatContent);
 
               chatMessages.appendChild(containerPesan);
